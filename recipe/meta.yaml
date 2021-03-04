@@ -1,4 +1,4 @@
-{% set version = '0.1.2' %}
+{% set version = "0.1.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/butcher_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/butcher/butcher_{{ version }}.tar.gz
-  sha256: 74ac6cc45f365db5aaacde9f0f1b200def28307bb1a9fa310e52909cb7bc797c
+  sha256: a953ecd935349a266fe23bd1852c4e980f78366846afbad42c0e3e163d972048
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -50,11 +50,10 @@ test:
 about:
   home: https://tidymodels.github.io/butcher, https://github.com/tidymodels/butcher
   license: MIT
-  summary: Provides a set of five S3 generics to axe components of fitted model objects and help
-    reduce the size of model objects saved to disk.
+  summary: Provides a set of five S3 generics to axe components of fitted model objects and help reduce the size of model objects saved to disk.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
