@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/butcher_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/butcher/butcher_{{ version }}.tar.gz
-  sha256: 965ecfce1a16e1187aaac1b1cc3770a3d197e9622f14717d48cce2ff8a0d20d0
+  sha256: a37d403703f4bae7fdb871f96a66b81d032d6cadba0ad419e32c33672c3408df
 
 build:
   merge_build_host: true  # [win]
