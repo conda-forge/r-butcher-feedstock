@@ -1,11 +1,11 @@
-About r-butcher
-===============
+About r-butcher-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-butcher-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tidymodels.github.io/butcher, https://github.com/tidymodels/butcher
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-butcher-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides a set of five S3 generics to axe components of fitted model objects and help reduce the size of model objects saved to disk.
 
