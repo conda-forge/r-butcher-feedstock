@@ -1,4 +1,4 @@
-{% set version = "0.3.6" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/butcher_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/butcher/butcher_{{ version }}.tar.gz
-  sha256: a6e025c1f4562f57f6f0d6285c7e5c7192141eade22917a6600178cb437ad16e
+  sha256: a5ca4ba850993831fb66879babf0fc32b82fa513fdf327e6ef76ef06f4df037c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
